@@ -4,37 +4,44 @@ import Link from "next/link";
 interface ICardProps {
   href: string;
   imgSrc: string;
-  layoutId: string;
+  tittle: string;
 }
 
-const Card: React.FC<ICardProps> = ({ href, imgSrc, layoutId }) => (
+const Card: React.FC<ICardProps> = ({ href, imgSrc, tittle }) => (
   <Link href={href}>
-    <div className="relative h-20 md:h-40 bg-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-      <motion.img src={imgSrc} className="w-full h-full" layoutId={layoutId} />
+    <div className="h-20 mt-6 flex flex-row bg-gray-400 bg-opacity-20 rounded-xl cursor-pointer">      
+      <img src={imgSrc} className="h-full p-4" />
+      <div className="mt-4">
+        <p className="text-white text-base">{tittle}</p>
+        <p className="text-gray-300 text-sm">test description</p>
+      </div>
     </div>
   </Link>
 );
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-4xl sm:text-6xl lg:text-7xl mt-10 md:mt-24 leading-none font-extrabold tracking-tight text-gray-900">
-        Construa sites modernos com agilidade sem precisar sair do HTML.
-      </h1>
+    <div className="flex justify-center">
 
-      <div className="mt-10 md:mt-24 grid w-full grid-cols-1 grid-rows-3 gap-4 md:grid-cols-3 md:grid-rows-1">
-        <Card href="/nextjs" imgSrc="/img/nextjs.svg" layoutId="nextjs-logo" />
-        <Card
-          href="/tailwind"
-          imgSrc="/img/tailwind.svg"
-          layoutId="tailwind-logo"
-        />
-        <Card
-          href="/framermotion"
-          imgSrc="/img/framermotion.svg"
-          layoutId="framermotion-logo"
-        />
+      <div className="rounded-3xl overflow-hidden shadow w-4/5 sm:w-4/5 md:w-2/5 my-3 bg-gray-400 bg-opacity-20">
+        <img src="https://i.imgur.com/GUIuOIN.jpg" className="w-full h-40 border-b-4 border-white" />
+        <div className="flex justify-center -mt-8">
+            <img src="https://github.com/tarikwataya.png" className="w-28 h-28 rounded-full border-solid border-4 -mt-6 border-white" />		
+        </div>
+        <div className="text-center px-3 pt-2">
+          <h3 className="text-white text-lg bold font-sans">Tárik Wataya</h3>
+          <p className="font-sans font-light text-gray-300">Front-End Developer</p>
+        </div>
+        <div className="pl-10 pr-10 pb-10 flex flex-col">
+          <Card href="/tailwind" imgSrc="/img/instagram.svg" tittle="Access my instagram" />
+          <Card href="/nextjs" imgSrc="/img/github.svg" tittle="The best Github"/>
+          <Card href="/nextjs" imgSrc="/img/github.svg" tittle="The best Github"/>
+        </div>
+
       </div>
+      
+
+      
     </div>
   );
 }
