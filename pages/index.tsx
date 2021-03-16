@@ -14,11 +14,40 @@ export default function Home() {
         />
         
         <div className="pl-10 pr-10 pb-10 flex flex-col">
-          <Card href="/nextjs" imgSrc="/img/linkedin.svg" tittle="My Linkedin" description="Veja minhas experiências!" />
-          <Card href="/nextjs" imgSrc="/img/github.svg" tittle="My Github" description="Meus códigos estão aqui!" />
-          <Card href="/nextjs" imgSrc="/img/portfolio.svg" tittle="My Portfolio" description="Veja meus projetos por completo!" />
-          <Card href="/tailwind" imgSrc="/img/instagram.svg" tittle="My instagram" description="Diversos conteúdos legais!" />
-          <Card href="/nextjs" imgSrc="/img/fire.svg" tittle="Firecat Services" description="Empresa de prestação de Serviço" />
+          <Card 
+            href="https://www.linkedin.com/in/tarikwataya/" 
+            icon="/img/linkedin.svg" 
+            tittle="My Linkedin" 
+            description="See my experiences!" 
+          />
+
+          <Card 
+            href="https://github.com/tarikwataya" 
+            icon="/img/github.svg" 
+            tittle="My Github" 
+            description="My codes are here!" 
+          />
+
+          <Card 
+            href="http://wataya.firecat.com.br/" 
+            icon="/img/portfolio.svg" 
+            tittle="My Portfolio" 
+            description="See my projects in full!" 
+          />
+
+          <Card 
+            href="https://www.instagram.com/tarik_wataya/" 
+            icon="/img/instagram.svg" 
+            tittle="My instagram" 
+            description="Various cool content!" 
+          />
+
+          <Card 
+            href="https://firecat.com.br/" 
+            icon="/img/fire.svg" 
+            tittle="Firecat Services" 
+            description="Service Provider & Consulting" 
+          />
         </div>
       </div>
     </div>
