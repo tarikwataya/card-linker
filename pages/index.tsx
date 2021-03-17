@@ -45,7 +45,7 @@ export default function Home() {
           <Card 
             href="https://firecat.com.br/" 
             icon="/img/fire.svg" 
-            tittle="Firecat Services" 
+            tittle="Firecat" 
             description="Service Provider & Consulting" 
           />
         </div>
