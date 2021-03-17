@@ -2,7 +2,8 @@
   Card Linker
 </h1>
 
-![Capturar](https://user-images.githubusercontent.com/17626241/111389519-e37d0a00-868f-11eb-9497-ed0c854e3355.PNG)
+![Capturar](https://user-images.githubusercontent.com/17626241/111396536-0adad380-869e-11eb-8f36-f1cac5c3f6ea.PNG)
+![Capturar](https://user-images.githubusercontent.com/17626241/111396572-204ffd80-869e-11eb-8e06-02c7cd4d19b0.PNG)
 
 ## Developer
 
